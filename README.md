@@ -5,7 +5,7 @@ The entire set of tasks would take most mid-level front developers about 2-4 hou
 
 Just work through the tasks and see how many you can do in such a way that you are happy with how much you accomplished. You are free to use any library, framework, and previous code to accomplish the tasks. After submission you are free to make edits up and until the time we have agreed to review your code.
 
-**To be totally clear, _THERE IS NO EXPECTATION FOR YOU TO COMPLETE ALL OF THE TASKS_!** It is strongly advised for you to satisfy the requirements of the user story first while keeping in mind the "things to consider during review" section of this exercise. BONUS tasks will differentiate you from other candidates if and only if you have succesfully completed the requirements of the User Story first.
+**To be totally clear, _THERE IS NO EXPECTATION FOR YOU TO COMPLETE ALL OF THE TASKS_!** It is strongly advised for you to satisfy the requirements of the user story first while keeping in mind the "things to consider during review" section of this exercise. BONUS tasks will differentiate you from other candidates if and only if you have successfully completed the requirements of the User Story first.
 
 **Please fork the repository and share your version when done via email to luis@trend.io**
 
@@ -52,7 +52,7 @@ The api should be able to tell me how many credits brands have at any point in t
 - [ ] Process the transactions.json assuming each brand gets 100 credits per month added, and this information is not on the file.
 - [ ] BONUS - Use a database and database queries to accomplish the tasks above. You will need to import the data into the database.
 - [ ] BONUS - Create a single GET route to accomplish all of the tasks above, the result of the get route should be the output of the request in JSON format, while the inputs should be in the parameters of the request ex.\
-**GET somedomain/transactions?action=buy&date=01312021&brandId=brand3** (This should return the amount of credits bougth until 01/31/2022 for brand3)
+**GET somedomain/transactions?action=buy&date=01312021&brandId=brand3** (This should return the amount of credits bought until 01/31/2022 for brand3)
 - [ ] BONUS - Adapt your code if necessary to handle transactions_bigger.json
 
 
