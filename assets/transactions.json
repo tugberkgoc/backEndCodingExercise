@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "brand3",
+    "stripeCustomerId": "1d0fd24c-4a99-4370-988c-6a8fd3118c56",
+    "stripeChargeId": "b2d867ff-7d4f-4a65-b823-651b3945dbb5",
+    "transactionDate": "1632070544",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "d076a32d-cc30-49ef-b29d-5f48c437569d",
+    "stripeChargeId": "2986d107-5b6d-42c2-b020-e69a220e5704",
+    "transactionDate": "1644222695",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "c2fa1686-7d39-48cf-b0b1-70638cef0e4b",
+    "stripeChargeId": "621262a7-cbdf-420d-83bc-446a596923a9",
+    "transactionDate": "1612490790",
+    "transactionType": "expire",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "f3e0ddb9-3894-42da-a077-8e6c49b62e5d",
+    "stripeChargeId": "714fd8cd-c331-45ec-a7ae-ef143bcb33f0",
+    "transactionDate": "1631789083",
+    "transactionType": "buy",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "c6e961d2-9834-4fc2-9263-68df36a6fcf2",
+    "stripeChargeId": "8b56008b-9bba-4c3f-9f95-4b5104b13c2b",
+    "transactionDate": "1642773442",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "ad2b801f-706f-4c27-b218-a2c4ff62e286",
+    "stripeChargeId": "458dd29c-2332-435b-b04a-643f575d0815",
+    "transactionDate": "1643921840",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "86d01360-ffb3-487e-b244-ec42b90a53a2",
+    "stripeChargeId": "da0bb3a5-f617-4e50-a895-da2a543a38f4",
+    "transactionDate": "1643100366",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "0b256826-d7bc-4441-9b9e-ce3942c1d819",
+    "stripeChargeId": "d9cffcc1-eb28-4324-b817-81d392227d89",
+    "transactionDate": "1620724519",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "13fb31fe-ad9c-4904-ad52-b1cd540281a2",
+    "stripeChargeId": "82b2e902-388f-4614-a42d-ebecbb8ed898",
+    "transactionDate": "1640098139",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "a4a18590-c08e-4bad-b758-e4e18d9189ea",
+    "stripeChargeId": "d0bfcb18-6c76-4a55-92be-7773cbb1c83e",
+    "transactionDate": "1637897814",
+    "transactionType": "expire",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "8bcb750e-c418-4d33-9f3e-0bd634127d09",
+    "stripeChargeId": "f9b17e90-281f-4b57-985b-7ef91bc1961d",
+    "transactionDate": "1641044039",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "bb5693d6-bf5e-4f14-98f8-924161f62168",
+    "stripeChargeId": "8a850ff1-916a-4b3c-931b-f18a0ba871df",
+    "transactionDate": "1621423367",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "42c6532a-1492-44f0-bc9f-f4f1233ddc0c",
+    "stripeChargeId": "95b22e66-4e84-4e72-a842-29be234205ac",
+    "transactionDate": "1628300245",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "c95171d4-3b4b-4900-a715-40489333f202",
+    "stripeChargeId": "20ee957d-5640-467c-b818-56933833bc22",
+    "transactionDate": "1620679688",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "b8b4e7bb-ebd4-4937-8818-bb5b4faf7c17",
+    "stripeChargeId": "93fe092f-9df6-4764-854a-956f4f36d759",
+    "transactionDate": "1615218866",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "759e0155-ff0f-4e44-bab9-b8aae2a859a6",
+    "stripeChargeId": "86299f84-2e20-440b-8565-f34af5c0521a",
+    "transactionDate": "1612797744",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "745728b3-29b6-46b2-8daf-b50928680633",
+    "stripeChargeId": "803d32a0-7bdb-4b48-b46e-92679fbb961c",
+    "transactionDate": "1614454933",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "c7424f77-08fe-4c3b-a6d8-a519695b25d5",
+    "stripeChargeId": "97ae6097-f156-43c2-9417-68392ad907f6",
+    "transactionDate": "1611227227",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "ad94e633-c797-4679-8bc4-bb5de8460259",
+    "stripeChargeId": "4ac99161-d8f0-425a-9486-ebab2e834a7e",
+    "transactionDate": "1634675250",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "3406504a-ea26-4bc4-82a1-f77d5f21ee88",
+    "stripeChargeId": "1ad3f6e8-45e7-45d5-857e-808b3f225e46",
+    "transactionDate": "1620702508",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "291bafe5-1835-4c80-8dd2-f0910170e5c8",
+    "stripeChargeId": "0ffa54ea-e6fc-40e8-93b3-a545f80d9ea0",
+    "transactionDate": "1620914047",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "84084819-c00a-4d2a-b514-e12c6594dd60",
+    "stripeChargeId": "38536253-f5f0-4183-a8b5-3a262aeb306e",
+    "transactionDate": "1610637580",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "2a3d6c74-0113-43a7-9eb1-4150dbed5c33",
+    "stripeChargeId": "ae743f38-e43e-4311-9763-a84c5d796f88",
+    "transactionDate": "1646003904",
+    "transactionType": "spend",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "adbee640-294c-4147-86bb-0155a656ca1f",
+    "stripeChargeId": "456ba9a4-bd99-4432-bf19-352e992473e6",
+    "transactionDate": "1617338568",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "7e612cb9-605c-491e-a549-47d8e603c354",
+    "stripeChargeId": "d93068f8-0135-479f-8335-90fa05f792df",
+    "transactionDate": "1615504856",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "60501d42-e636-487a-8eaf-9f6b81b1fa9c",
+    "stripeChargeId": "23024cf6-ef57-4688-9376-b7c0b30d7aee",
+    "transactionDate": "1637044723",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "7e16a84f-ce43-4b57-97fb-4d600c6923ea",
+    "stripeChargeId": "69a78376-2bca-4520-bf47-563fe07e78a2",
+    "transactionDate": "1632927905",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "36c37086-f59e-4ecd-b921-2e2aafb9a927",
+    "stripeChargeId": "7635d12b-3ed1-4144-9f24-fe301334c884",
+    "transactionDate": "1631277017",
+    "transactionType": "expire",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "300a57f4-f0f9-439a-8114-032ff2a2764e",
+    "stripeChargeId": "2e788c0c-0d0e-4c08-aa20-1463ae438f31",
+    "transactionDate": "1630684220",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "ed318c8f-04a1-405e-a5dd-4b11c3c5503c",
+    "stripeChargeId": "46489d23-f196-443d-87e1-8467b0701103",
+    "transactionDate": "1620967220",
+    "transactionType": "expire",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "b7e91a9b-183f-458c-9afb-6e80a8ab3f1a",
+    "stripeChargeId": "1be47e9d-4e76-46bc-8b10-4625eb76fa00",
+    "transactionDate": "1629461365",
+    "transactionType": "refund",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "03b1cddf-e2ea-410c-bf28-29a110169cd4",
+    "stripeChargeId": "59331ce6-dbdc-4da4-ac13-edf29a3b7f03",
+    "transactionDate": "1611209299",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "5568d6c7-3681-4d67-ad47-fc8a59bcf141",
+    "stripeChargeId": "dfedd86b-2623-425e-a574-9f71c4631cdd",
+    "transactionDate": "1634250699",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "66d8939e-e20c-461b-a6d5-cacd20203f2d",
+    "stripeChargeId": "99ab0bb8-cb84-47e9-a30a-f92884708534",
+    "transactionDate": "1625559299",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "58473302-abde-4844-80ca-501dd8f1f573",
+    "stripeChargeId": "9afff943-dc89-401b-9ccb-dc66d32eb96b",
+    "transactionDate": "1632223403",
+    "transactionType": "refund",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "9a793f6d-4ac9-4cb4-b612-c51f064e6618",
+    "stripeChargeId": "0256eaa7-5780-424f-895a-849b53de0e06",
+    "transactionDate": "1611527443",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "a94c53c6-d000-4d33-b481-6380d38c7a30",
+    "stripeChargeId": "6189d25a-e1d9-422b-8500-ced4f6741b5e",
+    "transactionDate": "1625722736",
+    "transactionType": "refund",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "df39f3d0-347c-43f4-ab66-0c0446c284ee",
+    "stripeChargeId": "25e5bce2-9eb7-4ba4-8adc-97bf0954ab88",
+    "transactionDate": "1630398382",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "cd6395ae-fd19-43d3-86b4-653cd656e7f7",
+    "stripeChargeId": "0a864e89-5aaf-443e-a5a8-d1c603a92309",
+    "transactionDate": "1611294397",
+    "transactionType": "buy",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "f79ad5bd-58b1-408d-993d-9fdef5394e92",
+    "stripeChargeId": "7ef4dcb2-4d0a-4374-9198-d36363b55562",
+    "transactionDate": "1642482541",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "a6417ba1-50aa-41e1-9a6f-bfd8237d628a",
+    "stripeChargeId": "d7109e74-da8d-467f-9d4c-0a2900b3335e",
+    "transactionDate": "1644228948",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "d75604a9-b317-45ea-ab71-f30cb7ea36aa",
+    "stripeChargeId": "62a56307-1d4b-4f8a-be01-3aa598124fe7",
+    "transactionDate": "1612365987",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "e75aa190-8224-4627-a8cc-8c813d42bdc2",
+    "stripeChargeId": "0157add8-bc6a-49db-97d0-638275eddc26",
+    "transactionDate": "1616673696",
+    "transactionType": "expire",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "f2d0acf6-c003-443b-bd49-8d27215d6894",
+    "stripeChargeId": "0ed2b065-4955-42a0-b213-2dc9214a8c46",
+    "transactionDate": "1633987192",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "3661b109-333f-44cd-8f25-cc799c1a3d9a",
+    "stripeChargeId": "aa6de4c7-ec9d-4efd-b259-77a283aa9b02",
+    "transactionDate": "1632560654",
+    "transactionType": "expire",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "a73a8079-650e-4f77-905f-5e3ab6252143",
+    "stripeChargeId": "d5bcbd46-6bfe-492e-90aa-0a51b5c1aec2",
+    "transactionDate": "1618143249",
+    "transactionType": "spend",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "56efc624-3286-408f-a54c-0f2c5ac5c853",
+    "stripeChargeId": "bc140c20-7e37-47f3-bbec-f6569410f620",
+    "transactionDate": "1626753167",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "b3f6f565-21ba-4bc5-a292-f4738a3fff76",
+    "stripeChargeId": "c6336289-c8c2-467b-aab9-144165478f8f",
+    "transactionDate": "1633883866",
+    "transactionType": "buy",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "8476adc0-45cb-4a25-9e3d-a80b8ccf5c05",
+    "stripeChargeId": "6f05dfba-a8fb-4fdc-b2f2-4a32254106c4",
+    "transactionDate": "1613187263",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "6ac14b83-5ebe-4651-9c6c-807b1ac0b5ab",
+    "stripeChargeId": "dd16496b-29a0-499c-85a2-eb615b3ff1ed",
+    "transactionDate": "1611423533",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "f091a291-4fe2-4597-a901-77e0da4af81b",
+    "stripeChargeId": "17022ce7-9bd6-43be-9962-97b5ad50afb6",
+    "transactionDate": "1631778959",
+    "transactionType": "spend",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "f2f5d510-ba9a-4183-9363-cafdea96ec6d",
+    "stripeChargeId": "ca5f19e7-d06a-4d27-9821-ca49615139f1",
+    "transactionDate": "1630622853",
+    "transactionType": "expire",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "04e74fcb-bc28-4feb-9192-0d3c4efcdbca",
+    "stripeChargeId": "67e48b0c-631c-41c0-bd55-892fb3c8b91f",
+    "transactionDate": "1625112462",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "dc479515-fdda-41fa-b970-dd03e00e0237",
+    "stripeChargeId": "14a18387-c40a-480d-8997-158ad131074d",
+    "transactionDate": "1609823394",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "8e120ff9-cf19-451d-bb0d-2084e134fbe1",
+    "stripeChargeId": "db95ea0e-51db-4fe4-a797-7821e55f7847",
+    "transactionDate": "1615665627",
+    "transactionType": "refund",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "d2b6681c-e2f1-4659-9d6e-4b7741612281",
+    "stripeChargeId": "391c974a-6944-4f67-abcb-9cce8f7e36ec",
+    "transactionDate": "1643115097",
+    "transactionType": "spend",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "eedf30a6-9d02-4c17-ac8b-255a82b86fb3",
+    "stripeChargeId": "92988a20-17e6-4dc2-b6f8-68e65a676df2",
+    "transactionDate": "1637339876",
+    "transactionType": "expire",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "e6c0c6b7-aeb6-45b5-a7b8-fa73897a100b",
+    "stripeChargeId": "d7f6b9d0-33f3-4fdc-96b5-9ddf60585454",
+    "transactionDate": "1624431294",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "4ceac973-c2df-4c99-80a2-4c160d7b376a",
+    "stripeChargeId": "ebfe99d0-5e7d-4b3c-8673-a25a3c1f751f",
+    "transactionDate": "1611525313",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "89538d97-4833-4c32-9d28-df53c73f8953",
+    "stripeChargeId": "4ff6d280-6d15-444c-8c1e-c4bdeb5c2aa0",
+    "transactionDate": "1612639219",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "c9f2ad6c-f064-451f-9ba8-72900c4f74b1",
+    "stripeChargeId": "90f0b2f1-57dd-4641-b222-2d3dfd782458",
+    "transactionDate": "1640476169",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "b82daf63-a7df-4493-b50f-76935fcaf708",
+    "stripeChargeId": "1941db72-af75-489b-bc93-439266548394",
+    "transactionDate": "1621483719",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "94bdc3dd-4a2d-494a-a52c-a8593b908aa6",
+    "stripeChargeId": "7d852d1b-fc80-492f-8269-37f02a1df175",
+    "transactionDate": "1628186662",
+    "transactionType": "buy",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "75483860-faed-477a-a247-a62eb5aefda0",
+    "stripeChargeId": "3c1b7c6b-1938-4620-a63f-118ea95b1077",
+    "transactionDate": "1633622499",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "f5c658fc-3370-4f71-a4f1-c4f6eb5ca346",
+    "stripeChargeId": "7b12f2c7-5ccc-4a35-8926-9793e905dda6",
+    "transactionDate": "1618992287",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "5f46ada9-535c-44a8-85d5-642c2b6ba11c",
+    "stripeChargeId": "b61d7d8b-0a7d-46e6-a53f-f2c94b4e21ae",
+    "transactionDate": "1609860143",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "212f31e9-bb8f-4f20-81b2-a463ab20c2c4",
+    "stripeChargeId": "88ed09ba-741d-40ec-8a65-9372e3a8ac32",
+    "transactionDate": "1633093362",
+    "transactionType": "expire",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "4584ed83-37e9-4d07-bde9-2eb71609d978",
+    "stripeChargeId": "8b3844b3-690f-415d-b321-80a6725c3d7e",
+    "transactionDate": "1617623337",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "56a57e27-4565-4be7-9aa0-8848fc8ffdd4",
+    "stripeChargeId": "23dfd526-710d-447b-801f-e7eea931ad3b",
+    "transactionDate": "1639359030",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "317b15a1-06c1-4cc9-a885-51ae87e67160",
+    "stripeChargeId": "51cf8ab7-2722-439d-8b67-3cbbc77343c9",
+    "transactionDate": "1636903769",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "c04a90b0-0496-4c23-8479-a6e9385d25bf",
+    "stripeChargeId": "c86099cd-0c57-43ac-ae09-2345547ea968",
+    "transactionDate": "1636254797",
+    "transactionType": "buy",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "82238ecd-6174-4757-b184-d46240668829",
+    "stripeChargeId": "f815251d-f900-4c02-9f0b-e63230870c60",
+    "transactionDate": "1641611077",
+    "transactionType": "spend",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "56fe9d25-ae60-457b-a04f-82120e73d317",
+    "stripeChargeId": "915b223a-18bc-485b-a69d-1a76ed3733c7",
+    "transactionDate": "1637185098",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "cbb5581c-0924-447a-961b-96c84d5acf97",
+    "stripeChargeId": "4b9b95d4-85fb-4781-9c13-ad9ae2495864",
+    "transactionDate": "1612567706",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "2f23bf72-0d79-4637-ae36-2731e963a1ff",
+    "stripeChargeId": "c421d6fb-8f3a-4ad7-8c2b-c489c39e28d8",
+    "transactionDate": "1636342204",
+    "transactionType": "buy",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "8d10b66a-6dee-444c-99ae-da6a92705c94",
+    "stripeChargeId": "25048e49-4046-4691-82d9-d7de7f2e3b91",
+    "transactionDate": "1625046640",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "2ebdaab1-0f74-4bc0-a210-81c2d5211f84",
+    "stripeChargeId": "8f6f43e9-dd91-403e-a915-5fad3c60d9ff",
+    "transactionDate": "1635276501",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "4ff0658a-3a3b-4b2f-8b9a-46815724c049",
+    "stripeChargeId": "8d96b509-67d5-4d63-8977-eecc69ce1722",
+    "transactionDate": "1622132021",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "4f9575be-41e5-42d4-b78a-4d973734a912",
+    "stripeChargeId": "490bc8e3-5879-46f3-aaed-cacd722c1830",
+    "transactionDate": "1641731917",
+    "transactionType": "spend",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "ee49f678-8239-47a3-a320-0d1d15e72dd3",
+    "stripeChargeId": "41ac912e-eec2-4115-a579-0d6e1a4fd6e7",
+    "transactionDate": "1641150850",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "b3e47200-fefe-40b8-b338-bad7d35189b3",
+    "stripeChargeId": "7a27c479-3bde-4233-b44c-9f061ffe1cf8",
+    "transactionDate": "1619062457",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "7a44fd33-4ba5-4c51-9122-f681af9fdf06",
+    "stripeChargeId": "8fc6700f-2379-499d-bd5d-ca8d46f8410e",
+    "transactionDate": "1612474926",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "84f494a4-a219-4172-af6b-c9126c311980",
+    "stripeChargeId": "da2d287f-3013-4c3d-8fd0-7b9e2d8c6705",
+    "transactionDate": "1616382757",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "4a4c1e75-e3e5-4b34-937a-80c65e5e903b",
+    "stripeChargeId": "ec81241b-deb8-4e34-9aab-e246e01eaa8a",
+    "transactionDate": "1627594471",
+    "transactionType": "buy",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "8630967c-9d77-4364-9027-8620f277aa0c",
+    "stripeChargeId": "0da07c05-d7b1-4ebb-916a-01112349bc1c",
+    "transactionDate": "1633188320",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "775fd06b-b7bc-40ed-a420-4cd924231e98",
+    "stripeChargeId": "516ea065-c4d3-4599-b126-a5128f4e6211",
+    "transactionDate": "1628633026",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "e0e6090a-932f-4272-9d0b-1d7efcbd30a5",
+    "stripeChargeId": "d975a3c6-b8b3-40e0-8380-dcdd96425396",
+    "transactionDate": "1614377154",
+    "transactionType": "buy",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "3c85f2c0-8285-41c9-a729-b0a84b42efef",
+    "stripeChargeId": "8d23beb9-e9c2-476f-8528-eb96d2877e57",
+    "transactionDate": "1616269915",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "8a4d1dcb-96a2-4ef7-a200-659047bed9fd",
+    "stripeChargeId": "25f99b63-aa7d-4fcc-adc8-71715476ec84",
+    "transactionDate": "1636870714",
+    "transactionType": "refund",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "70c1e255-6ad5-41dd-b536-42619c726221",
+    "stripeChargeId": "d7fe067a-eafb-49e1-bea0-7c30709ec4a1",
+    "transactionDate": "1629991449",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "f32ddc51-10fc-4646-bf86-b99a7d2fb0aa",
+    "stripeChargeId": "18e8cd21-0325-4d97-a174-bf1b7fbbe09b",
+    "transactionDate": "1641282867",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "d06b24f6-724e-4739-8562-a069b7ac171e",
+    "stripeChargeId": "36f79e72-a371-4118-974c-993cdf878f65",
+    "transactionDate": "1615879497",
+    "transactionType": "buy",
+    "amountOfCredits": 5,
+    "costPerCredit": "$100.00",
+    "discount": "0.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "5726a9f9-6bc0-4d8e-b2c5-d180abecfab8",
+    "stripeChargeId": "4f4d589e-8733-44a8-9960-17ee0aee5bbb",
+    "transactionDate": "1629347175",
+    "transactionType": "refund",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "b408c6cf-bf8e-4c8d-ae1d-613c75c24e96",
+    "stripeChargeId": "e24eefee-dd2b-420f-af2c-c61eda2a5de6",
+    "transactionDate": "1635251959",
+    "transactionType": "expire",
+    "amountOfCredits": 20,
+    "costPerCredit": "$90.00",
+    "discount": "10.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "8b61694c-ddc2-4c31-8fa2-b0cbf1ec9b31",
+    "stripeChargeId": "201a7b22-34ef-4709-b6f4-e97b1ec69865",
+    "transactionDate": "1622221605",
+    "transactionType": "buy",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand1",
+    "stripeCustomerId": "db60f1cc-d146-4706-95ff-122d6d1c993d",
+    "stripeChargeId": "d4d5ef97-b340-44fb-a64b-037a66fa7b87",
+    "transactionDate": "1615373855",
+    "transactionType": "expire",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "b189ed15-30ce-482f-99d0-2067020d043a",
+    "stripeChargeId": "5c5bf4bf-0edc-4262-892b-af6a72741b5a",
+    "transactionDate": "1623221277",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand2",
+    "stripeCustomerId": "dfae3ba8-ba1a-4b97-bff2-d572d1e31ade",
+    "stripeChargeId": "ba96834c-625b-4745-a9c1-f67f89ce7477",
+    "transactionDate": "1628629642",
+    "transactionType": "spend",
+    "amountOfCredits": 10,
+    "costPerCredit": "$95.00",
+    "discount": "5.00%"
+  },
+  {
+    "id": "brand3",
+    "stripeCustomerId": "2c939316-a0bd-4099-83f0-1561be96076e",
+    "stripeChargeId": "d5ec4d15-4902-466e-a97d-66e4bc5141e8",
+    "transactionDate": "1632516544",
+    "transactionType": "refund",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  },
+  {
+    "id": "brand4",
+    "stripeCustomerId": "bf8d5c7d-88c5-47a4-88dc-095e3dfc684d",
+    "stripeChargeId": "153c3de3-e3e6-4a8d-92f1-99252450110d",
+    "transactionDate": "1619475494",
+    "transactionType": "spend",
+    "amountOfCredits": 40,
+    "costPerCredit": "$88.00",
+    "discount": "12.00%"
+  }
+]
