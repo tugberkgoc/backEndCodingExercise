@@ -35,7 +35,7 @@ As an administrator of Trend, I'd like to be able to know how brands on Trend ar
 
 From beginning of time (01/03/2021) until end of time (03/04/2022)
 - Total number of credits spent.
-- Total number of credits bougth.
+- Total number of credits bought.
 - Total number of credits expired.
 
 The api should be able to tell me how many credits brands have at any point in time, considering the following information for transactionType:
