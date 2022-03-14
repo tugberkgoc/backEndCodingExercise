@@ -1,7 +1,6 @@
 module.exports = {
-  USER_EXISTS_AND_ACTIVE: {
-    name: 'userExistAndActive',
-    message:
-      'Hesap zaten aktif durumda. Giris sayfasindan giris yapabilirsiniz. '
+  MERGE_NOT_POSSIBLE: {
+    name: 'mergeNotPossible',
+    message: 'There has been an issue, while merging arrays'
   }
 }
