@@ -48,7 +48,7 @@ The api should be able to tell me how many credits brands have at any point in t
 ## Tasks
 
 - [✓] Process the transactions.json so that you can display the total number of credits spent, bought and expired for each brand. (http://localhost:9001/transactions/report?startDate=01/03/2021&endDate=03/04/2022)
-- [✓] Process the transactions.json so that you get the number of credits a single brand has for a specific date. A function with inputs (date, brandId) that returns the number of credits: This number can be negative in some cases (/transactions/credits?date=01/01/2022&brandId=brand1)
+- [✓] Process the transactions.json so that you get the number of credits a single brand has for a specific date. A function with inputs (date, brandId) that returns the number of credits: This number can be negative in some cases (http://localhost:9001/transactions/credits?date=01/01/2022&brandId=brand1)
 - [✓] Process the transactions.json assuming each brand gets 100 credits per month added, and this information is not on the file. (http://localhost:9001/transactions/airdrop)
 - [✓] BONUS - Use a database and database queries to accomplish the tasks above. You will need to import the data into the database. (Sequelize-PostgreSQL were being used)
 - [✓] BONUS - Create a single GET route to accomplish all of the tasks above, the result of the get route should be the output of the request in JSON format, while the inputs should be in the parameters of the request ex.\

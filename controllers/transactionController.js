@@ -126,7 +126,7 @@ exports.giveFreeCreditsToBrand = async (req, res) => {
     await db.transaction.bulkCreate(transactions, { transaction })
   })
 
-  res.send(brands)
+  res.send(transactions)
 }
 
 exports.getTransactions = async (req, res) => {
