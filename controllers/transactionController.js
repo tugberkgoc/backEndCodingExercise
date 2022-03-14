@@ -1,5 +1,6 @@
-const { Op, db, getOrderQuery } = require('./baseController') // ApiError
-// const { transactionTypes } = require('../data/enums')
+const { Sequelize, Op, db, getOrderQuery } = require('./baseController') // ApiError
+const { transactionTypes } = require('../data/enums')
+const { mergeArrays } = require('../utils/commonUtils')
 
 // #region transaction
 
@@ -10,10 +11,70 @@ exports.getTransactions = async (req, res) => {
 }
 
 exports.getTransactionsReport = async (req, res) => {
-  // const { id } = req.params
-  const transactions = await db.transaction.findAll({
-    group: ['transaction.brandId']
+  const { startDate, endDate } = req.query
+
+  const transactionDate = {}
+  if (startDate || endDate) {
+    transactionDate.transactionDate = {}
+    if (startDate) {
+      transactionDate.transactionDate[Op.gte] = startDate
+    }
+    if (endDate) {
+      transactionDate.transactionDate[Op.lte] = endDate
+    }
+  }
+
+  const spentTransactions = await db.transaction.findAll({
+    where: { transactionType: transactionTypes.SPEND, ...transactionDate },
+    attributes: [
+      'brandId',
+      [
+        Sequelize.literal(
+          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+        ),
+        'totalSpentPrice'
+      ]
+    ],
+    group: ['brandId'],
+    raw: true
   })
+
+  const boughtTransactions = await db.transaction.findAll({
+    where: { transactionType: transactionTypes.BUY, ...transactionDate },
+    attributes: [
+      'brandId',
+      [
+        Sequelize.literal(
+          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+        ),
+        'totalBoughtPrice'
+      ]
+    ],
+    group: ['brandId'],
+    raw: true
+  })
+
+  const expiredTransactions = await db.transaction.findAll({
+    where: { transactionType: transactionTypes.EXPIRE, ...transactionDate },
+    attributes: [
+      'brandId',
+      [
+        Sequelize.literal(
+          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+        ),
+        'totalExpiredPrice'
+      ]
+    ],
+    group: ['brandId'],
+    raw: true
+  })
+
+  const transactions = mergeArrays([
+    spentTransactions,
+    boughtTransactions,
+    expiredTransactions
+  ])
+
   res.send(transactions)
 }
 
@@ -22,9 +83,8 @@ const getTransactionQuery = params => {
     brandId,
     stripeCustomerId,
     stripeChargeId,
-    startDate,
-    endDate,
-    transactionType,
+    date,
+    action,
     sort,
     order,
     limit,
@@ -42,18 +102,13 @@ const getTransactionQuery = params => {
   if (stripeChargeId) {
     transactionQuery.stripeChargeId = stripeChargeId
   }
-  if (startDate || endDate) {
-    transactionQuery.transactionDateYear = {}
-    if (startDate) {
-      transactionQuery.transactionDateYear[Op.gte] = startDate
-    }
-    if (endDate) {
-      transactionQuery.transactionDateYear[Op.lte] = endDate
-    }
+  if (date) {
+    transactionQuery.transactionDate = {}
+    transactionQuery.transactionDate[Op.lte] = new Date(date * 1000)
   }
-  if (transactionType) {
-    // && transactionTypes.hasOwnProperty(transactionType)
-    transactionQuery.transactionType = transactionType
+  if (action) {
+    // && transactionTypes.hasOwnProperty(action)
+    transactionQuery.transactionType = action
   }
 
   const query = {
