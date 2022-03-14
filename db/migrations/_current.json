@@ -1,0 +1,58 @@
+{
+    "tables": {
+        "transactions": {
+            "tableName": "transactions",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "brandId": {
+                    "allowNull": false,
+                    "field": "brandId",
+                    "seqType": "Sequelize.STRING(6)"
+                },
+                "stripeCustomerId": {
+                    "allowNull": false,
+                    "field": "stripeCustomerId",
+                    "seqType": "Sequelize.STRING"
+                },
+                "stripeChargeId": {
+                    "allowNull": false,
+                    "field": "stripeChargeId",
+                    "seqType": "Sequelize.STRING"
+                },
+                "transactionDate": {
+                    "allowNull": false,
+                    "field": "transactionDate",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "transactionType": {
+                    "allowNull": false,
+                    "field": "transactionType",
+                    "seqType": "Sequelize.STRING(10)"
+                },
+                "amountOfCredits": {
+                    "allowNull": false,
+                    "field": "amountOfCredits",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "costPerCredit": {
+                    "allowNull": false,
+                    "field": "costPerCredit",
+                    "seqType": "Sequelize.DECIMAL(18, 2)"
+                },
+                "discount": {
+                    "allowNull": false,
+                    "field": "discount",
+                    "seqType": "Sequelize.DECIMAL(18, 2)"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}

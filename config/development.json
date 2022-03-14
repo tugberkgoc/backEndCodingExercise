@@ -1,0 +1,22 @@
+{
+  "db": {
+    "url": "postgres://tfgteqrjlvawcs:94a80a04dd0361da69a03bfc23e20437c0f7f3660117296b2002f2005342af14@ec2-3-209-61-239.compute-1.amazonaws.com:5432/dn8m7be1dicf",
+    "config": {
+      "host": "ec2-3-209-61-239.compute-1.amazonaws.com",
+      "username": "tfgteqrjlvawcs",
+      "password": "94a80a04dd0361da69a03bfc23e20437c0f7f3660117296b2002f2005342af14",
+      "database": "dn8m7be1dicf",
+      "dialect": "postgres",
+      "migrationStorageTableName": "sequelizeMeta",
+      "port": 5432,
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      },
+      "define": {},
+      "timezone": "-04:00"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "backendcodingexercise",
+  "version": "1.0.0",
+  "description": "This is a coding exercise designed to test back-end knowledge as well as coding skills for common features in a web application. The entire set of tasks would take most mid-level front developers about 2-4 hours to finish, feel free to spend as much time as you would like. At Trend, we value the quality of the solutions not the scope or the time it takes to accomplish.",
+  "main": "server.js",
+  "scripts": {
+    "start": "(export NODE_ENV=development || SET NODE_ENV=development) && node server.js",
+    "serve": "(export NODE_ENV=development || SET NODE_ENV=development) && nodemon server.js",
+    "db:makemigrations": "node ./node_modules/sequelize-auto-migrations/bin/makemigration.js --name",
+    "db:migrate": "npx sequelize db:migrate",
+    "db:migrate:test": "npm run env NODE_ENV=test.local npx sequelize db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "db:seed:all": "npx sequelize db:seed:all --debug",
+    "db:seed:down:all": "npx sequelize-cli db:seed:undo:all",
+    "db:seed": "npx sequelize db:seed --seed",
+    "db:seed:sql": "npx sequelize db:seed --seed sql-script.js",
+    "db:seed:add": "npx sequelize seed:create --name",
+    "db:seed:down": "npx sequelize-cli db:seed:undo --seed",
+    "node-prune": "node-prune",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tugberkgoc/backEndCodingExercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tugberkgoc/backEndCodingExercise/issues"
+  },
+  "homepage": "https://github.com/tugberkgoc/backEndCodingExercise#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "date-fns": "^2.16.1",
+    "fastify": "^3.11.0",
+    "fastify-autoload": "^3.4.2",
+    "fastify-cors": "^5.2.0",
+    "fastify-formbody": "^5.0.0",
+    "fastify-jwt": "^2.3.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "pino-pretty": "^4.3.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sequelize": "^5.21.10",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-spellcheck": "0.0.19",
+    "eslint-plugin-standard": "^5.0.0",
+    "faker": "^5.2.0",
+    "husky": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "sequelize-auto-migrations": "github:scimonster/sequelize-auto-migrations",
+    "sequelize-cli": "^6.2.0"
+  }
+}

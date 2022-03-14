@@ -1,0 +1,9 @@
+{
+  "standard.enable": true,
+  "prettier.bracketSpacing": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "jest.debugMode": true,
+  "jest.jestCommandLine": "npm run test"
+}
