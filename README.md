@@ -50,10 +50,10 @@ The api should be able to tell me how many credits brands have at any point in t
 - [ ] Process the transactions.json so that you can display the total number of credits spent, bought and expired for each brand.
 - [ ] Process the transactions.json so that you get the number of credits a single brand has for a specific date. A function with inputs (date, brandId) that returns the number of credits: This number can be negative in some cases
 - [ ] Process the transactions.json assuming each brand gets 100 credits per month added, and this information is not on the file.
-- [*] BONUS - Use a database and database queries to accomplish the tasks above. You will need to import the data into the database.
-- [*] BONUS - Create a single GET route to accomplish all of the tasks above, the result of the get route should be the output of the request in JSON format, while the inputs should be in the parameters of the request ex.\
+- [ ] BONUS - Use a database and database queries to accomplish the tasks above. You will need to import the data into the database.
+- [ ] BONUS - Create a single GET route to accomplish all of the tasks above, the result of the get route should be the output of the request in JSON format, while the inputs should be in the parameters of the request ex.\
 **GET somedomain/transactions?action=buy&date=01312021&brandId=brand3** (This should return the amount of credits bought until 01/31/2022 for brand3)
-- [*] BONUS - Adapt your code if necessary to handle transactions_bigger.json
+- [ ] BONUS - Adapt your code if necessary to handle transactions_bigger.json
 
 
 ## Things to consider during your review
