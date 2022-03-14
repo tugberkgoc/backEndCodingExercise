@@ -2,7 +2,6 @@ const db = require('../db')
 const { Op, Sequelize } = require('sequelize')
 const nodeUtil = require('util')
 const ApiError = require('../models/ApiError')
-const { pad } = require('../utils/commonUtils')
 
 const getOrderQuery = (sort, order, defaultQuery = [['id', 'DESC']]) => {
   if (!sort) {
@@ -35,6 +34,5 @@ module.exports = {
   Sequelize,
   ApiError,
   nodeUtil,
-  pad,
   getOrderQuery
 }

@@ -1,5 +1,26 @@
 {
     "tables": {
+        "brands": {
+            "tableName": "brands",
+            "schema": {
+                "id": {
+                    "primaryKey": true,
+                    "allowNull": false,
+                    "field": "id",
+                    "seqType": "Sequelize.STRING(6)"
+                },
+                "startDate": {
+                    "allowNull": false,
+                    "field": "startDate",
+                    "seqType": "Sequelize.DATE"
+                },
+                "airdropFreeCreditIssuedDate": {
+                    "field": "airdropFreeCreditIssuedDate",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
         "transactions": {
             "tableName": "transactions",
             "schema": {
@@ -13,22 +34,26 @@
                 "brandId": {
                     "allowNull": false,
                     "field": "brandId",
+                    "references": {
+                        "model": "brands",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
                     "seqType": "Sequelize.STRING(6)"
                 },
                 "stripeCustomerId": {
-                    "allowNull": false,
                     "field": "stripeCustomerId",
                     "seqType": "Sequelize.STRING"
                 },
                 "stripeChargeId": {
-                    "allowNull": false,
                     "field": "stripeChargeId",
                     "seqType": "Sequelize.STRING"
                 },
                 "transactionDate": {
                     "allowNull": false,
                     "field": "transactionDate",
-                    "seqType": "Sequelize.DATEONLY"
+                    "seqType": "Sequelize.DATE"
                 },
                 "transactionType": {
                     "allowNull": false,

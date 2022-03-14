@@ -9,28 +9,14 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false
       },
       stripeCustomerId: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING
       },
       stripeChargeId: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING
       },
       transactionDate: {
-        type: DataTypes.DATEONLY,
+        type: DataTypes.DATE,
         allowNull: false
-      },
-      transactionDateYear: {
-        type: DataTypes.VIRTUAL,
-        get () {
-          return new Date(this.startDate).getUTCFullYear()
-        }
-      },
-      transactionDateMonth: {
-        type: DataTypes.VIRTUAL,
-        get () {
-          return new Date(this.startDate).getMonth() + 1
-        }
       },
       transactionType: {
         type: DataTypes.STRING(10),
@@ -65,7 +51,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   )
 
-  transaction.associate = function (models) {}
+  transaction.associate = function (models) {
+    transaction.belongsTo(models.brand, {
+      foreignKey: 'brandId'
+    })
+  }
 
   return transaction
 }

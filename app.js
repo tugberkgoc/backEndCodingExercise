@@ -1,8 +1,6 @@
 const Fastify = require('fastify')
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
-const config = require('config')
-const jwt = require('fastify-jwt')
 const cors = require('fastify-cors')
 const formBody = require('fastify-formbody')
 
@@ -11,10 +9,6 @@ const build = (opts = {}) => {
 
   app.register(formBody)
 
-  app.register(jwt, {
-    secret: config.get('secrets.jwt')
-  })
-
   app.register(AutoLoad, {
     dir: path.join(__dirname, 'routes')
   })
@@ -22,13 +16,6 @@ const build = (opts = {}) => {
   app.register(cors, {
     origin: true
   })
-
-  // app.decorate('authenticate', async function (request) {
-  //   await request.jwtVerify()
-  //   if (request.user.role !== userRoles.AGENT) {
-  //     throw new ApiError(NO_AUTHORIZATION)
-  //   }
-  // })
 
   app.addHook('preHandler', function (req, reply, done) {
     if (req.method !== 'GET') {

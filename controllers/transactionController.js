@@ -1,80 +1,137 @@
-const { Sequelize, Op, db, getOrderQuery } = require('./baseController') // ApiError
+const { Sequelize, Op, db, getOrderQuery } = require('./baseController')
 const { transactionTypes } = require('../data/enums')
-const { mergeArrays } = require('../utils/commonUtils')
+const { diffInMonths } = require('../utils/commonUtils')
 
 // #region transaction
-
-exports.getTransactions = async (req, res) => {
-  const query = getTransactionQuery(req.query)
-  const transactions = await db.transaction.findAndCountAll(query)
-  res.send(transactions)
-}
 
 exports.getTransactionsReport = async (req, res) => {
   const { startDate, endDate } = req.query
 
-  const transactionDate = {}
+  const whereQuery = {}
   if (startDate || endDate) {
-    transactionDate.transactionDate = {}
+    whereQuery.transactionDate = {}
     if (startDate) {
-      transactionDate.transactionDate[Op.gte] = startDate
+      whereQuery.transactionDate[Op.gte] = startDate
     }
     if (endDate) {
-      transactionDate.transactionDate[Op.lte] = endDate
+      whereQuery.transactionDate[Op.lte] = endDate
     }
   }
 
-  const spentTransactions = await db.transaction.findAll({
-    where: { transactionType: transactionTypes.SPEND, ...transactionDate },
+  const transactions = await db.transaction.findAll({
+    where: whereQuery,
     attributes: [
       'brandId',
       [
         Sequelize.literal(
-          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+          `SUM(CASE WHEN "transactionType" = '${transactionTypes.SPEND}' THEN "amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100) ELSE 0 END)::numeric(18,2)`
         ),
         'totalSpentPrice'
-      ]
-    ],
-    group: ['brandId'],
-    raw: true
-  })
-
-  const boughtTransactions = await db.transaction.findAll({
-    where: { transactionType: transactionTypes.BUY, ...transactionDate },
-    attributes: [
-      'brandId',
+      ],
       [
         Sequelize.literal(
-          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+          `SUM(CASE WHEN "transactionType" = '${transactionTypes.BUY}' THEN "amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100) ELSE 0 END)::numeric(18,2)`
         ),
         'totalBoughtPrice'
-      ]
-    ],
-    group: ['brandId'],
-    raw: true
-  })
-
-  const expiredTransactions = await db.transaction.findAll({
-    where: { transactionType: transactionTypes.EXPIRE, ...transactionDate },
-    attributes: [
-      'brandId',
+      ],
       [
         Sequelize.literal(
-          'SUM("amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100))::numeric(18,2)'
+          `SUM(CASE WHEN "transactionType" = '${transactionTypes.EXPIRE}' THEN "amountOfCredits" * "costPerCredit" * ((100.00 - "discount") / 100) ELSE 0 END)::numeric(18,2)`
         ),
         'totalExpiredPrice'
       ]
     ],
-    group: ['brandId'],
+    group: ['brandId']
+  })
+
+  res.send(transactions)
+}
+
+exports.getNumberOfCredits = async (req, res) => {
+  const { date, brandId } = req.query
+
+  const whereQuery = {}
+
+  if (date) {
+    whereQuery.transactionDate = {}
+    whereQuery.transactionDate[Op.lte] = date
+  }
+  if (brandId) {
+    whereQuery.brandId = brandId
+  }
+
+  const transactions = await db.transaction.findAll({
+    where: whereQuery,
+    attributes: [
+      'transactionType',
+      [Sequelize.literal('SUM("amountOfCredits")::integer'), 'numberOfCredits']
+    ],
+    group: ['transactionType'],
     raw: true
   })
 
-  const transactions = mergeArrays([
-    spentTransactions,
-    boughtTransactions,
-    expiredTransactions
-  ])
+  let numberOfCredits = 0
 
+  transactions.forEach(transaction => {
+    if (
+      [transactionTypes.BUY, transactionTypes.REFUND].includes(
+        transaction.transactionType
+      )
+    ) {
+      numberOfCredits += transaction.numberOfCredits
+    } else {
+      numberOfCredits -= transaction.numberOfCredits
+    }
+  })
+
+  res.send({ numberOfCredits })
+}
+
+exports.giveFreeCreditsToBrand = async (req, res) => {
+  const brands = await db.brand.findAll()
+
+  const transactions = []
+  const today = new Date()
+
+  brands.forEach(brand => {
+    let numberOfMonth = 0
+    if (brand.airdropFreeCreditIssuedDate) {
+      numberOfMonth = diffInMonths(today, brand.airdropFreeCreditIssuedDate)
+    } else {
+      numberOfMonth = diffInMonths(today, brand.startDate)
+      brand.airdropFreeCreditIssuedDate = today
+    }
+
+    if (numberOfMonth > 0) {
+      const transaction = {
+        brandId: brand.id,
+        stripeCustomerId: null,
+        stripeChargeId: null,
+        transactionDate: today,
+        transactionType: transactionTypes.AIRDROP,
+        amountOfCredits: numberOfMonth,
+        costPerCredit: 100.0,
+        discount: 0.0
+      }
+
+      transactions.push(transaction)
+    }
+  })
+
+  await db.sequelize.transaction(async transaction => {
+    for (const brand of brands) {
+      await brand.save()
+    }
+
+    await db.transaction.bulkCreate(transactions, { transaction })
+  })
+
+  res.send(brands)
+}
+
+exports.getTransactions = async (req, res) => {
+  const query = getTransactionQuery(req.query)
+  const transactions = await db.transaction.findAndCountAll(query)
   res.send(transactions)
 }
 
@@ -104,10 +161,9 @@ const getTransactionQuery = params => {
   }
   if (date) {
     transactionQuery.transactionDate = {}
-    transactionQuery.transactionDate[Op.lte] = new Date(date * 1000)
+    transactionQuery.transactionDate[Op.lte] = date
   }
   if (action) {
-    // && transactionTypes.hasOwnProperty(action)
     transactionQuery.transactionType = action
   }
 
