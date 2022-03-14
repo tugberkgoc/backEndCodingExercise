@@ -1,3 +1,5 @@
+const { transactionTypes } = require('../../data/enums')
+
 module.exports = (sequelize, DataTypes) => {
   const transaction = sequelize.define(
     'transaction',
@@ -45,6 +47,16 @@ module.exports = (sequelize, DataTypes) => {
       discount: {
         type: DataTypes.DECIMAL(18, 2),
         allowNull: false
+      },
+      totalPrice: {
+        type: DataTypes.VIRTUAL,
+        get () {
+          return this.transactionType === transactionTypes.EXPIRE
+            ? this.amountOfCredits * this.costPerCredit
+            : this.amountOfCredits *
+                this.costPerCredit *
+                ((100.0 - this.discount) / 100)
+        }
       }
     },
     {
