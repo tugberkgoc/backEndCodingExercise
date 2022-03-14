@@ -16,7 +16,6 @@
     "db:seed:sql": "npx sequelize db:seed --seed sql-script.js",
     "db:seed:add": "npx sequelize seed:create --name",
     "db:seed:down": "npx sequelize-cli db:seed:undo --seed",
-    "node-prune": "node-prune",
     "lint": "eslint . --fix",
     "prepare": "husky install"
   },
